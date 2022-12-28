@@ -57,7 +57,7 @@ class Follow(models.Model):
         related_name='follower',
         verbose_name='Пользователь',
     )
-    author = models.ForeignKey(
+    following = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
         related_name='following',
@@ -65,6 +65,6 @@ class Follow(models.Model):
     )
 
     class Meta:
-        unique_together = ['user', 'author', ]
+        unique_together = ['user', 'following', ]
         verbose_name = 'Подписка'
         verbose_name_plural = 'Подписки'
