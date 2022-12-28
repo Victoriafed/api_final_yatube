@@ -11,6 +11,7 @@ from .serializers import (
 )
 from posts.models import Post, Group, Follow
 
+
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
