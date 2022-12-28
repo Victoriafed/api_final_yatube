@@ -1,15 +1,7 @@
 from rest_framework import serializers
 from rest_framework.relations import SlugRelatedField
+
 from posts.models import Post, Group, Comment, Follow, User
-
-
-class UserSerializer(serializers.ModelSerializer):
-    posts = serializers.StringRelatedField(many=True, read_only=True)
-
-    class Meta:
-        model = User
-        fields = ('id', 'username', 'first_name', 'last_name', 'posts')
-        ref_name = 'ReadOnlyUsers'
 
 
 class PostSerializer(serializers.ModelSerializer):
