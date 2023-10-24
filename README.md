@@ -4,6 +4,8 @@
 [![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?style=flat&logo=Django%20REST%20Framework&logoColor=56C0C0&color=008080)](https://www.django-rest-framework.org/)
 [![JWT](https://img.shields.io/badge/-JWT-464646?style=flat&color=008080)](https://jwt.io/)
 
+API для социальной сети yatube.
+Позволяет публиковать посты, получать информацию о постах, комментариях к ним и группах.
 ### Как запустить проект:
 Cоздать и активировать виртуальное окружение:
 
